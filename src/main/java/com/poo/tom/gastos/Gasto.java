@@ -22,7 +22,7 @@ public class Gasto {
     private Long id;
 
     @Enumerated(EnumType.STRING)
-    private Tipo tipo;
+    private TipoDeGasto tipo;
 
     @JsonFormat
     private Date data;
@@ -30,7 +30,7 @@ public class Gasto {
     private BigDecimal valor;
 
     @Enumerated(EnumType.STRING)
-    private Forma forma;
+    private FormaDePagamento forma;
 
     public Gasto(GastosCadastrados gastos) {
         this.tipo = gastos.tipo();
